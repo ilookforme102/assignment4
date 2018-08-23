@@ -3,23 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="form__top">
-    <h2>Let's talk</h2>
-    <p>Think you have what it takes? Show us.</p>
-</div>
 <div class="container">
     <form >
-        <b>1. Personal information</b>
-        <br>
-        <input type="text" placeholder="Full name*"><br>
-        <input type="text" placeholder="Phone*"><br>
-        <input type="text" placeholder="Email*"><br>
-        <input type="text" placeholder="Re-enter email*"><br>
-        <input type="text" placeholder=""><br>
-        <input type="text" placeholder="Re-enter email*"><br>
+        <div class="col col-1 form__top">
+            <h2>Let's talk</h2>
+            <p>Think you have what it takes? Show us.</p>
+        </div>
+        <div class=" col person__info">
+            <h4><b>1. Personal information</b></h4>
+            <div class="col--nopad col-4 personal__box">
+                <input class=" input__text personal_item name" type="text" placeholder="Full name*"><br>
+                <input class="input__text personal_item phone" type="text" placeholder="Phone*"><br>
+                <div class="per0"></div>
+                <input class="input__text personal_item email" type="email" placeholder="Email*"><br>
+                <input class="input__text personal_item re__email" type="email" placeholder="Re-enter email*"><br>
+            </div>
+            <div class="col--nopad col-4 address__box">
+                <input class="input__text address__item address" type="text" placeholder="Address*"><br>
+                <input class="input__text address__item address-2" type="text" placeholder=""> <br>
+                <input class="input__text input__text address__item city" type="text" placeholder="City*">
+                <input class="input__text address__item state" type="text" placeholder="State*">
+                <input class="input__text address__item country" type="text" placeholder="Country/Region*">
+                <input class="input__text address__item postal__code" type="text" placeholder="Zip/Postal code*"><br>
+                <input class="input__text address__item about__us" type="text" placeholder="How did you hear about us"><br>
+
+            </div>
+        </div>
+        <div class="col skills">
+            <h4><b>2. Skill and Location</b></h4>
+            <p>Which is your primary discipline ?*</p><br>
+            <div class=" col--nopad col-4 discipline">
+                <input class="btn" type="button" value="Design Research" >
+                <input class="btn" type="button" value="Visual Design" >
+                <input class="btn" type="button" value="UX Design " >
+                <input class="btn" type="button" value="Front end Dev" >
+            </div>
+            <fieldset>
+                <legend>Is this toggle switch awesome?</legend>
+                <div class="toggle">
+                    <input type="radio" name="research-design" value="research-design" id="design__research">
+                    <label for="design__research">Design Research</label>
+                    <input type="radio" name="visual-design" value="visual-design" id="visual__design" checked="checked" />
+                    <label for="visual__design">Visual Design</label>
+                    <input type="radio" name="ux-design" value="ux-design" id="ux__design" />
+                    <label for="ux__design">UX Design</label>
+                    <input type="radio" name="front-end" value="front-end" id="front__end">
+                    <label for="front__end">Front end Dev</label>
+                </div>
+            </fieldset>
+            <div class=" col--nopad col-2 skill__location">
+                <div class="experience">
+                    <b>Do you have any expericence with any other discipline</b><br>
+                    <input type="checkbox" id="exp1" name="exp1" value="Visual Design">
+                    <label for="exp1">Visual Design</label>
+                    <br>
+                    <input type="checkbox" id="exp2" name="exp2" value="UX Design">
+                    <label for="exp2">UX Design</label>
+                    <br>
+                    <input type="checkbox" id="exp3" name="exp3" value="Front end Development">
+                    <label for="exp3">Front end Development</label>
+                    <br>
+                </div>
+                <div class="location">
+                    <b>Do you have any expericence with any other discipline</b>
+                    <p>You must be legally authorized to work without visa sponsorship in the location you choose</p>
+                    <input type="checkbox" id="loc1" name="loc1" value="loc1">
+                    <label for="loc1">Helsinki, Finland</label>
+                    <br>
+                    <input type="checkbox" id="loc2" name="loc2" value="loc2">
+                    <label for="loc2">Berlin, Germany</label>
+                    <br>
+                    <input type="checkbox" id="loc3" name="loc3" value="loc3" >
+                    <label for="loc3">Dublin, Ireland</label>
+                    <br>
+                    <input type="checkbox" id="loc5" name="loc5" value="loc5" />
+                    <label for="loc5">Tokyo, Japan</label>
+                    <br>
+                    <input type="checkbox" id="loc6" name="loc6" value="loc6" />
+                    <label for="loc6">London, UK</label>
+                    <br>
+                    <input type="checkbox" id="loc7" name="loc7" value="loc7" />
+                    <label for="loc7">Paris, France</label>
+                    <br>
+                    <input type="checkbox" id="loc8" name="loc8" value="loc8" />
+                    <label for="loc8">Somewhere else</label>
+                    <br>
+
+                </div>
+            </div>
+            <div class="col portfolio">
+                <h4><b>Portfolio</b></h4>
+                <br>
+                <p>Prove you are next IBM's next great designer by showing us who you are. What you've done. How you think. Tell us your story</p>
+                <input type="text" class="input__text portfolio__link" value="" placeholder="portfolio link*">
+                <textarea class="input__text" placeholder="Anything else (another link, availability, etc.)?"></textarea>
+            </div>
+            <input type="submit" class="btn-active" value="Submit">
+        </div>
     </form>
 </div>
-</body>
 </html>

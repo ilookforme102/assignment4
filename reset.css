@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+    font-size: 12px;
+}
+body{
+    background: var(--dark);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--white);
+}
+b,h1,h2,h3,h4,h5 {
+    padding-bottom: 10px;
+
+}
